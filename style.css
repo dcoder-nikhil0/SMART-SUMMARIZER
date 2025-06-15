@@ -1,0 +1,82 @@
+/* Root & Background */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  padding: 16px;
+  margin: 0;
+  background-color: #1e1e2f;
+  color: #f0f0f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Headline */
+h2 {
+  margin-top: 0;
+  color: #f9fafc;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Dropdown menu */
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #c5c8f0;
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  background-color: #2b2b3d;
+  color: #f0f0f5;
+  border: 1px solid #3e3e5c;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(145deg, #3c3c5a, #2a2a3f);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #46466c, #333354);
+}
+
+/* Output Summary Box */
+#output {
+  padding: 12px;
+  background-color: #2a2a3f;
+  color: #e0e0f5;
+  border-radius: 6px;
+  margin-top: 12px;
+  user-select: text;
+  white-space: pre-wrap;
+  font-size: 14px;
+  min-height: 80px;
+  border: 1px solid #3e3e5c;
+  cursor: context-menu;
+}
+
+/* Tooltip */
+#output::after {
+  content: "Right-click to copy";
+  display: block;
+  font-size: 11px;
+  color: #888;
+  text-align: right;
+  margin-top: 5px;
+}
