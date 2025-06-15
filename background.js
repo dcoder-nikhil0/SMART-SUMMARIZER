@@ -1,3 +1,5 @@
+importScripts('config.js');
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "summarizeContent") {
     handleFreemium(request.content, request.length)
@@ -51,7 +53,7 @@ async function handleFreemium(content, length) {
 }
 
 async function summarizePageContent(content, length) {
-  const apiKey = "AIzaSyCh0xFNFBoFuBz8PQUcY_290D9ERH9aiuk"; // ✅ Use your own API key
+  const apiKey = API_KEY; // ✅ Use your own API key
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent`;
 
   const truncatedText = content.slice(0, 10000);
