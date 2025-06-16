@@ -1,78 +1,121 @@
-# SMART SUMMARIZER
+# 🧠 Smart Summarizer – Chrome Extension
+
+**Smart Summarizer** is a lightweight, AI-powered Chrome Extension that lets you summarize any blog post, news article, or long-form content directly from your browser. It uses Google's **Gemini Pro** (via Generative Language API) to deliver high-quality summaries in **Short (100 words)**, **Medium (200 words)**, or **Long (500 words)** formats.
+
+> 🚀 Perfect for students, professionals, researchers, or anyone who wants to save time and read smarter.
 
 ---
 
-## Overview
+## 🎯 Why Smart Summarizer?
 
-The SMART SUMMARIZER is a powerful, user-friendly tool designed to distill lengthy texts into concise, easy-to-understand summaries. Leveraging advanced natural language processing (NLP) techniques, this application helps users quickly grasp the main points of articles, documents, or any textual content without having to read through the entire original.
+Reading lengthy content can be time-consuming, especially when you're just looking for the gist. Smart Summarizer helps you:
 
-## Features
+- Understand web content in seconds
+- Customize the length of summaries
+- Copy results effortlessly
+- Monitor your monthly usage (freemium model)
 
-- **Intelligent Summarization:** Employs sophisticated algorithms to identify and extract the most relevant information from your text.
-- **Customizable Summary Length:** Offers flexibility to adjust the summary's length to your specific needs.
-- **Multiple Input Options:** Supports various ways to input text, including direct pasting, file uploads, or URL fetching (depending on implementation).
-- **Intuitive User Interface:** Designed for ease of use, making summarization accessible to everyone.
-- **Fast Processing:** Generates summaries quickly, saving you valuable time.
 
-## How It Works
+## ✨ Features
 
-The SMART SUMMARIZER utilizes a combination of extractive and (potentially) abstractive summarization techniques. Extractive summarization works by identifying the most important sentences or phrases from the original text and stitching them together to form a summary. Abstractive summarization, on the other hand, involves generating new sentences that capture the core meaning of the original text, often rephrasing concepts. The specific algorithms and models used are fine-tuned to produce coherent and informative summaries.
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- (List any specific libraries or dependencies here, e.g., `nltk`, `spacy`, `transformers`, `streamlit` etc.)
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/dcoder-nikhil0/SMART-SUMMARIZER.git](https://github.com/dcoder-nikhil0/SMART-SUMMARIZER.git)
-    ```
-2.  **Navigate to the project directory:**
-    ```bash
-    cd SMART-SUMMARIZER
-    ```
-3.  **Install the required dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-    _(Note: You'll need to create a `requirements.txt` file listing all your project's dependencies if you haven't already. You can generate one using `pip freeze > requirements.txt` after installing all your libraries.)_
-
-### Usage
-
-1.  **Run the application:**
-    ```bash
-    python your_main_app_file.py
-    ```
-    _(Replace `your_main_app_file.py` with the actual name of your main Python application file, e.g., `app.py` or `main.py`.)_
-2.  **Open your web browser** and navigate to the address provided in your terminal (usually `http://localhost:8501` if using Streamlit).
-3.  **Input your text** into the designated area, select your desired summary length, and click "Summarize."
-
-## Contributing
-
-We welcome contributions to the SMART SUMMARIZER! If you have suggestions for improvements, new features, or bug fixes, please feel free to:
-
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/YourFeatureName`).
-3.  Make your changes.
-4.  Commit your changes (`git commit -m 'Add some feature'`).
-5.  Push to the branch (`git push origin feature/YourFeatureName`).
-6.  Open a Pull Request.
-
-Please ensure your code adheres to good coding practices and includes appropriate tests where applicable.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-_(Note: You'll need to add a `LICENSE` file to your repository if you haven't already. The MIT License is a common and permissive open-source license.)_
+✅ Summarize **any webpage or article**  
+✅ Choose from **3 summary lengths**:  
+  - `Short (100 words)`  
+  - `Medium (200 words)`  
+  - `Long (500 words)`  
+✅ Right-click on the summary to **copy to clipboard**  
+✅ Clean **dark-mode user interface**  
+✅ Built-in **quota tracking** – first 5 summaries/month are free  
+✅ Lightweight (~100 KB), secure and private  
+✅ Uses **Gemini Pro Flash API** (Google AI)
 
 ---
 
-## Contact
+## 🔧 Tech Stack
 
-If you have any questions or feedback, feel free to reach out!
+- **Chrome Extension**: Manifest v3
+- **JavaScript (Vanilla)** + DOM manipulation
+- **Gemini Pro Flash API** for summarization
+- **CSS** with dark theme styling
+- **Chrome Storage API** to track monthly usage quota
 
-- **Nikhil Kumar** - [GitHub Profile](https://github.com/dcoder-nikhil0)
+---
+
+## 🧪 Local Installation (Development Mode)
+
+To test the extension on your local Chrome browser:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/smart-summarizer.git
+   cd smart-summarizer
+
+2. **Open Chrome and navigate to:**
+    ```bash
+    chrome://extensions/
+
+3. **Enable Developer Mode**
+
+4. **Click "Load Unpacked" and select the project root folder**
+
+5. **Pin the extension to your toolbar**
+
+6. **Visit any website or article → Click the extension icon → Choose length → Get your summary!**
+
+## 🔐 API Key Management
+
+This extension currently uses Gemini Pro via a hardcoded API key. Avoid pushing your actual key to GitHub!
+
+✅ Recommended:
+
+- Replace your API key before using
+
+- Consider moving summarization to a backend (Node.js, Firebase, etc.)
+
+- Use environment variables or secure secrets management
+
+## 💸 Monetization (Freemium Model)
+
+- 🆓 5 summaries/month for free users
+
+- ⏳ Usage is tracked via chrome.storage.local
+
+- 📦 Future roadmap includes support for:
+
+    - 30, 100, or lifetime summaries
+
+    - Stripe / Razorpay integration
+
+    - Firebase Auth for premium users
+
+## 🛣 Roadmap
+
+- Basic summarization via Gemini API
+
+- Summary length selector
+
+- Right-click to copy
+
+- Monthly quota system (5 free uses)
+
+- Firebase Auth for login & user tracking
+
+- Stripe/Razorpay for one-time & subscription plans
+
+- Deployment to Chrome Web Store
+
+- Web dashboard for analytics
+
+## 🚀 What’s Next?
+
+I'm preparing for the official launch on the Chrome Web Store soon!
+Stay tuned — exciting updates are on the way. 🙌
+
+## 🔗 Connect
+
+- [LinkedIn][https://www.linkedin.com/in/dcoder-nikhil/]
+
+- Open for feedbacks or contribution on:  [Mail][nikhil.ranjanai@gmail.com]
+
+
+Made with ❤️ by **Dcoder-Nikhil**
