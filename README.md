@@ -113,9 +113,9 @@ Stay tuned — exciting updates are on the way. 🙌
 
 ## 🔗 Connect
 
-- [LinkedIn][https://www.linkedin.com/in/dcoder-nikhil/]
+- [LinkedIn](https://www.linkedin.com/in/dcoder-nikhil/)
 
-- Open for feedbacks or contribution on:  [Mail][nikhil.ranjanai@gmail.com]
+- Open for feedbacks or contribution on:  [Mail](nikhil.ranjanai@gmail.com)
 
 
 Made with ❤️ by **Dcoder-Nikhil**
