@@ -18,6 +18,16 @@ h2 {
   text-align: center;
   letter-spacing: 0.5px;
 }
+h2 img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+h2 img:hover {
+  transform: scale(1.1);
+}
 
 /* Dropdown menu */
 label {
