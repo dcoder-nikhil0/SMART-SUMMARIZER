@@ -18,15 +18,23 @@ h2 {
   text-align: center;
   letter-spacing: 0.5px;
 }
+h2 a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
 h2 img {
+  filter: brightness(0) invert(1); /* Makes black icon white */
   width: 20px;
   height: 20px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease;
 }
 
 h2 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  filter: brightness(0) invert(1) drop-shadow(0 0 4px #00ffae); /* Optional glow effect */
 }
 
 /* Dropdown menu */
